@@ -1,0 +1,3 @@
+[submodule "blockchain_server/nodejs-sdk"]
+	path = blockchain_server/nodejs-sdk
+	url = https://github.com/FISCO-BCOS/nodejs-sdk.git
