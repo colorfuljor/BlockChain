@@ -6,10 +6,13 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
+import qs from 'qs'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.prototype.$axios = axios
+Vue.prototype.$url = 'http://localhost:8080'
+Vue.prototype.$qs = qs
 
 /* eslint-disable no-new */
 new Vue({

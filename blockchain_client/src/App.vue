@@ -12,6 +12,8 @@
       <el-menu-item index="/" >主页</el-menu-item>
       <el-menu-item index="/sign">签署单据</el-menu-item>
       <el-menu-item index="/finance">融资</el-menu-item>
+      <el-menu-item index="/verify">账单认证</el-menu-item>
+      <el-menu-item index="/evaluate">信用评估</el-menu-item>
     </el-menu>
     <!--<img src="./assets/logo.png">-->
     <router-view/>

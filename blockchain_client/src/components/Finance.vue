@@ -28,14 +28,23 @@ export default {
       }).then(() => {
         var that = this
         this.$axios.request({
-          url: '',
+          url: that.$url + '/receipt/finance',
           method: 'Post',
           data: JSON.stringify({
             amount: that.amount
           }),
           responseType: 'json'
         }).then(function (response) {
+          that.amount = ''
           console.log(response.data)
+          if (response.data.status === '0x0') {
+            that.$message({
+              message: '融资成功',
+              type: 'success'
+            })
+          } else {
+            that.$message.error('失败')
+          }
         })
       })
     }

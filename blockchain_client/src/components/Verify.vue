@@ -1,20 +1,17 @@
 <template>
   <div class="main">
     <div>
-      <el-input v-model="name" placeholder="接收者公司名" class='inputClass'></el-input>
+      <el-input v-model="name" placeholder="公司名" class='inputClass'></el-input>
     </div>
     <div>
-        <el-input v-model="to" placeholder="接收者账户地址" class='inputClass'></el-input>
+        <el-input v-model="to" placeholder="公司账户地址" class='inputClass'></el-input>
     </div>
     <div>
-        <el-input v-model="amount" placeholder="金额" class='inputClass'></el-input>
-    </div>
-    <div>
-        <el-date-picker v-model="end" type="date" format="yyyy 年 MM 月 dd 日" value-format="yyyy-MM-dd" placeholder="截止日期" class='inputClass'></el-date-picker>
+        <el-input v-model="idx" placeholder="账单号" class='inputClass'></el-input>
     </div>
     <br>
     <div>
-      <el-button type="primary" @click="doSign()">确认</el-button>
+      <el-button type="primary" @click="doEvalute()">确认</el-button>
     </div>
     <br>
   </div>
@@ -22,17 +19,32 @@
 
 <script>
 export default {
-  name: 'Sign',
+  name: 'Evalute',
   data () {
     return {
-      to: '',
       name: '',
-      amount: '',
-      end: ''
+      to: '',
+      idx: ''
     }
   },
+  mounted: function () {
+    this.check()
+  },
   methods: {
-    doSign: function () {
+    check: function () {
+      var that = this
+      this.$axios.request({
+        url: that.$url + '/company',
+        method: 'GET',
+        responseType: 'json'
+      }).then(function (response) {
+        if (!response.data.admin) {
+          alert('你没有权限访问')
+          that.$router.push('/')
+        }
+      })
+    },
+    doEvalute: function () {
       this.$confirm('确认信息无误？', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
@@ -40,24 +52,22 @@ export default {
       }).then(() => {
         var that = this
         this.$axios.request({
-          url: that.$url + '/receipt/sign',
+          url: that.$url + '/company/Verify',
           method: 'Post',
           data: JSON.stringify({
-            to: that.to,
             name: that.name,
-            amount: that.amount,
-            end: that.end.toString()
+            to: that.to,
+            idx: that.idx
           }),
           responseType: 'json'
         }).then(function (response) {
-          that.to = ''
           that.name = ''
-          that.amount = ''
-          that.end = ''
+          that.to = ''
+          that.idx = ''
           console.log(response.data)
           if (response.data.status === '0x0') {
             that.$message({
-              message: '签署成功',
+              message: '认证成功',
               type: 'success'
             })
           } else {
