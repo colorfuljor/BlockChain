@@ -1,0 +1,58 @@
+[INFO] [2019-12-09 14:55:15] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11028347: startup date [Mon Dec 09 14:55:15 CST 2019]; root of context hierarchy
+[INFO] [2019-12-09 14:55:16] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2019-12-09 14:55:19] ChannelConnections.init(366) |  add connected node: 127.0.0.1:20200
+[INFO] [2019-12-09 14:55:20] ChannelConnections.reconnect(503) | try connect to: 127.0.0.1:20200
+[INFO] [2019-12-09 14:55:21] ConnectionCallback.onConnect(91) |  connect 127.0.0.1:20200 success, ctx: 1619342789
+[INFO] [2019-12-09 14:55:21] ConnectionCallback.queryNodeVersion(207) |  query node version host: 127.0.0.1:20200, seq: 6327b40da6bc4bc78e3231cd7a6f5065, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+[INFO] [2019-12-09 14:55:22] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-12-09 14:55:22] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-12-09 14:55:22] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=2, nodeVersion=2.1.0, EnumProtocol=VERSION_2]
+[INFO] [2019-12-09 14:55:22] ConnectionCallback.subBlockNotification(338) |  send sub block notification request, seq: b336d7a71e3c4cc4bceff6ae086b433f, content: ["_block_notify_1"]
+[INFO] [2019-12-09 14:55:22] ConnectionCallback.queryBlockNumber(370) |  query block number host: 127.0.0.1:20200, seq: 1c5bb643d910405f941b9662961b7300, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":1}
+[INFO] [2019-12-09 14:55:22] ConnectionCallback$4.onResponse(395) |  query blocknumer, host:127.0.0.1:20200, blockNumber: 0 
+[INFO] [2019-12-09 14:56:39] Async.run(19) |  default set setExeutor , pool size is 50
+[INFO] [2019-12-09 14:56:39] Async.setExeutor(81) |  set setExeutor because executor null, executor is java.util.concurrent.ThreadPoolExecutor@6d91790b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+[INFO] [2019-12-09 14:56:39] Service.onReceiveBlockNotify(1316) | Receive block notify: {"blockNumber":1,"groupID":1}
+
+[INFO] [2019-12-09 14:58:34] Service.onReceiveBlockNotify(1316) | Receive block notify: {"blockNumber":2,"groupID":1}
+
+[INFO] [2019-12-09 16:53:52] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11028347: startup date [Mon Dec 09 16:53:52 CST 2019]; root of context hierarchy
+[INFO] [2019-12-09 16:53:52] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2019-12-09 16:53:56] ChannelConnections.init(366) |  add connected node: 127.0.0.1:20200
+[INFO] [2019-12-09 16:53:56] ChannelConnections.reconnect(503) | try connect to: 127.0.0.1:20200
+[INFO] [2019-12-09 16:53:57] ConnectionCallback.onConnect(91) |  connect 127.0.0.1:20200 success, ctx: 543550346
+[INFO] [2019-12-09 16:53:57] ConnectionCallback.queryNodeVersion(207) |  query node version host: 127.0.0.1:20200, seq: 2170f5f8a3584caabf8e05b105178b81, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+[INFO] [2019-12-09 16:53:57] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-12-09 16:53:57] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-12-09 16:53:57] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=2, nodeVersion=2.1.0, EnumProtocol=VERSION_2]
+[INFO] [2019-12-09 16:53:57] ConnectionCallback.subBlockNotification(338) |  send sub block notification request, seq: ef175beaa33a4f989c92a9c7bb2b90d9, content: ["_block_notify_1"]
+[INFO] [2019-12-09 16:53:57] ConnectionCallback.queryBlockNumber(370) |  query block number host: 127.0.0.1:20200, seq: 946574c340d8491dbfc8ff31ca898549, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":1}
+[INFO] [2019-12-09 16:53:58] ConnectionCallback$4.onResponse(395) |  query blocknumer, host:127.0.0.1:20200, blockNumber: 2 
+[INFO] [2019-12-09 17:04:44] AbstractApplicationContext.prepareRefresh(583) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11028347: startup date [Mon Dec 09 17:04:44 CST 2019]; root of context hierarchy
+[INFO] [2019-12-09 17:04:44] XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO] [2019-12-09 17:04:47] ChannelConnections.init(366) |  add connected node: 127.0.0.1:20200
+[INFO] [2019-12-09 17:04:47] ChannelConnections.reconnect(503) | try connect to: 127.0.0.1:20200
+[INFO] [2019-12-09 17:04:48] ConnectionCallback.onConnect(91) |  connect 127.0.0.1:20200 success, ctx: 1506204247
+[INFO] [2019-12-09 17:04:48] ConnectionCallback.queryNodeVersion(207) |  query node version host: 127.0.0.1:20200, seq: 2e1bab60b23e40e992c8c41cb63de9e4, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+[INFO] [2019-12-09 17:04:48] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-12-09 17:04:48] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20190923 13:22:09, buildType=Linux/clang/Release, chainID=1, version=2.1.0, gitBranch=HEAD, gitCommit=cb68124d4fbf3df563a57dfff5f0c6eedc1419cc, supportedVersion=2.1.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20190923 13:22:09","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.1.0","Git Branch":"HEAD","Git Commit Hash":"cb68124d4fbf3df563a57dfff5f0c6eedc1419cc","Supported Version":"2.1.0"}}
+
+[INFO] [2019-12-09 17:04:48] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=2, nodeVersion=2.1.0, EnumProtocol=VERSION_2]
+[INFO] [2019-12-09 17:04:49] ConnectionCallback.subBlockNotification(338) |  send sub block notification request, seq: b8439a67959f48f88259d20fd469940b, content: ["_block_notify_1"]
+[INFO] [2019-12-09 17:04:49] ConnectionCallback.queryBlockNumber(370) |  query block number host: 127.0.0.1:20200, seq: 806b018461d84a4eab9a95d8b5b47807, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":1}
+[INFO] [2019-12-09 17:04:49] ConnectionCallback$4.onResponse(395) |  query blocknumer, host:127.0.0.1:20200, blockNumber: 2 
+[INFO] [2019-12-09 17:08:41] Service.onReceiveBlockNotify(1316) | Receive block notify: {"blockNumber":3,"groupID":1}
+
+[INFO] [2019-12-09 17:11:15] Service.onReceiveBlockNotify(1316) | Receive block notify: {"blockNumber":4,"groupID":1}
+
+[INFO] [2019-12-09 17:12:05] Service.onReceiveBlockNotify(1316) | Receive block notify: {"blockNumber":5,"groupID":1}
+
+[INFO] [2019-12-09 17:18:48] Service.onReceiveBlockNotify(1316) | Receive block notify: {"blockNumber":6,"groupID":1}
+
+[INFO] [2019-12-09 17:20:30] Service.onReceiveBlockNotify(1316) | Receive block notify: {"blockNumber":7,"groupID":1}
+

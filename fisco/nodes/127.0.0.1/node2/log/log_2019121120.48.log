@@ -1,0 +1,136 @@
+info|2019-12-11 20:48:28.903147|[INITIALIZER][initGlobalConfig],enableCompress=true,compatibilityVersion=2.1.0,versionNumber=33619968,chainId=1
+info|2019-12-11 20:48:29.001037|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30300
+info|2019-12-11 20:48:29.001132|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30301
+info|2019-12-11 20:48:29.001244|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30302
+info|2019-12-11 20:48:29.001287|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30303
+info|2019-12-11 20:48:29.001326|[P2P][Service] heartBeat,connected count=0
+info|2019-12-11 20:48:29.001825|[CHANNEL]ChannelRPCServer started
+info|2019-12-11 20:48:29.013046|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30302
+info|2019-12-11 20:48:29.018400|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30300
+info|2019-12-11 20:48:29.018470|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30301
+info|2019-12-11 20:48:29.018518|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30302
+info|2019-12-11 20:48:29.018563|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30303
+info|2019-12-11 20:48:29.018597|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:56134
+info|2019-12-11 20:48:29.018649|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30302
+info|2019-12-11 20:48:29.025225|[INITIALIZER][RPCInitializer]ChannelRPCHttpServer started.
+info|2019-12-11 20:48:29.025269|[LedgerInitializer],groupConfigPath=conf/
+info|2019-12-11 20:48:29.025378|[INITIALIZER][initSingleLedger] [GroupId]:  1
+info|2019-12-11 20:48:29.025402|[g:1][LEDGER]LedgerConstructor,configPath=conf/group.1.genesis,baseDir=data//group1
+info|2019-12-11 20:48:29.025418|[g:1][LEDGER][initGenesisConfig]initConsensusConfig/initDBConfig/initTxConfig,configFile=conf/group.1.genesis
+info|2019-12-11 20:48:29.025502|[g:1][LEDGER][initConsensusConfig],it.first=828ee74c84bc1673613f06d0b91618658cdd2393bfae30e2c2d94dce0259f6525f57e0412b057e43489b51e39a38e4765da15cf264e89fc34ae7ecdc50c2e137
+info|2019-12-11 20:48:29.025531|[g:1][LEDGER][initConsensusConfig],it.first=c9f8a9aabe06c01e9b394e840268f6a90d0ae932c84561eb36fc76c954b342b557d42e9274b5e5401482f797ed3d534f67f6e615219a177d518eb2eebedda20c
+info|2019-12-11 20:48:29.031943|[g:1][LEDGER][initConsensusConfig],it.first=c977f1b9067b0e15b330d7696058cede2203515983484c2280e06d9039921e62f3e9a257c29dd23a36f9e5c4523e24a04c42808b9f2d9031620648706f7c933b
+info|2019-12-11 20:48:29.031982|[g:1][LEDGER][initConsensusConfig],it.first=422659d6e3ddfd12480c9d5044b81cff46ad05f9ff83088ee5f2149e456ef7a4ee0c0d722b96ebab59962f500e2e85730dcc7735f6fe0901c9cc0a5f56992a4b
+info|2019-12-11 20:48:29.032026|[g:1][LEDGER][initIniConfig]initTxPoolConfig/initSyncConfig/initTxExecuteConfig,configFile=conf/group.1.ini
+info|2019-12-11 20:48:29.032167|[g:1][LEDGER][initLedger][DBInitializer]
+info|2019-12-11 20:48:29.032196|[g:1][DBINITIALIZER] [initRocksDBStorage]
+info|2019-12-11 20:48:29.032252|[g:1][ROCKSDB]open rocksDB handler
+info|2019-12-11 20:48:29.038815|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:56142
+info|2019-12-11 20:48:29.054318|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30302
+info|2019-12-11 20:48:29.054722|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:56154
+info|2019-12-11 20:48:29.054772|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30302
+info|2019-12-11 20:48:29.110429|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:56158
+info|2019-12-11 20:48:29.116942|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30302
+info|2019-12-11 20:48:29.208033|[P2P][Service] Connection established,nodeID=c9f8a9aa...,endpoint=127.0.0.1:56134
+info|2019-12-11 20:48:29.221859|[NETWORK][Host]startPeerSession, From=127.0.0.1:56134,nodeID=c9f8a9aa...
+info|2019-12-11 20:48:29.222026|[NETWORK][Host]startPeerSession, From=127.0.0.1:56142,nodeID=c977f1b9...
+info|2019-12-11 20:48:29.300676|[NETWORK][Host]startPeerSession, From=127.0.0.1:30302,nodeID=c977f1b9...
+info|2019-12-11 20:48:29.301028|[P2P][Service] Connection established,nodeID=422659d6...,endpoint=127.0.0.1:30303
+info|2019-12-11 20:48:29.301198|[NETWORK][Host]startPeerSession, From=127.0.0.1:30303,nodeID=422659d6...
+info|2019-12-11 20:48:29.301335|[P2P][Service] Connection established,nodeID=828ee74c...,endpoint=127.0.0.1:56154
+info|2019-12-11 20:48:29.301418|[NETWORK][Host]startPeerSession, From=127.0.0.1:56154,nodeID=828ee74c...
+info|2019-12-11 20:48:29.301613|[NETWORK][Host]startPeerSession, From=127.0.0.1:30300,nodeID=828ee74c...
+info|2019-12-11 20:48:29.322071|[NETWORK][Host]startPeerSession, From=127.0.0.1:30301,nodeID=c9f8a9aa...
+info|2019-12-11 20:48:29.322516|[NETWORK][Host]startPeerSession, From=127.0.0.1:56158,nodeID=422659d6...
+warning|2019-12-11 20:48:29.322804|[NETWORK][Session]doRead error,endpoint=127.0.0.1:56154,message=stream truncated
+info|2019-12-11 20:48:29.322846|[NETWORK][Session]drop, call and erase all callbackFunc in this session!,endpoint=127.0.0.1:56154
+warning|2019-12-11 20:48:29.322868|[P2P][Service] disconnect error P2PSession,nodeID=828ee74c...,endpoint=127.0.0.1:56154,errorCode=3,what=Disconnect
+warning|2019-12-11 20:48:29.322882|[P2P][Service] onDisconnect,errorCode=3,what=Dynamic exception type: dev::network::NetworkException
+std::exception::what: Disconnect
+
+warning|2019-12-11 20:48:29.322959|[NETWORK][Session][drop] closing remote 0.0.0.0:0,reason=Low-level TCP communication error.,endpoint=127.0.0.1:56154
+warning|2019-12-11 20:48:29.323140|[NETWORK][Session][drop] shutdown failed ,errorValue=9,message=Bad file descriptor
+info|2019-12-11 20:48:29.352108|[g:1][g:0][STORAGE][CachedStorage]Init flushStorage thread
+info|2019-12-11 20:48:29.352664|[g:1][BLOCKCHAIN][#checkAndBuildGenesisBlock]Already have the 0th block, 0th groupMark is equal to file groupMark.
+info|2019-12-11 20:48:29.375549|[g:1][CONSENSUS][PBFT]Register handler for PBFTEngine
+info|2019-12-11 20:48:29.392041|[g:1][CONSENSUS][PBFT],minBlockGenerationTime=500
+info|2019-12-11 20:48:29.392098|[LedgerInitializer init group succ],groupID=1
+warning|2019-12-11 20:48:29.393187|[SYNC][id:c977f1b9...][Status]Peer data not found,nodeId=c9f8a9aa...
+warning|2019-12-11 20:48:29.393508|[SYNC][id:c977f1b9...][Status]Peer data not found,nodeId=c9f8a9aa...
+info|2019-12-11 20:48:29.397910|[INITIALIZER][RPCInitializer]JsonrpcHttpServer started.
+info|2019-12-11 20:48:29.397959|[g:1][LEDGER]startAll...
+info|2019-12-11 20:48:29.399248|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=70,sealerIdx=2,hash=f8a92e53...,next=71,tx=1,nodeIdx=2
+info|2019-12-11 20:48:29.501107|[g:1][CONSENSUS][PBFT][PBFT init env successfully]
+info|2019-12-11 20:48:29.501136|[g:1][CONSENSUS][ConsensusEngine][Start ConsensusEngineBase]
+info|2019-12-11 20:48:29.501257|[g:1][CONSENSUS][PBFT][Start PBFTEngine...]
+info|2019-12-11 20:48:29.501277|[g:1][CONSENSUS][SEALER][Start sealer module]
+info|2019-12-11 20:48:29.502278|[g:1][EVENT][EventLogFilterManager]start,m_maxBlockRange=0,m_maxBlockPerLoopFilter=3
+info|2019-12-11 20:48:30.502114|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=71,tx=0,nodeIdx=2,hash=4ebfc7d8...
+info|2019-12-11 20:48:30.508041|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=1,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.293
+info|2019-12-11 20:48:30.509566|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=0,org_changeCycle=0,cur_changeCycle=0,to_view=1
+info|2019-12-11 20:48:31.520916|[g:1][CONSENSUS]addRawPrepare,height=71,reqIdx=3,hash=f5e56efd...
+info|2019-12-11 20:48:31.521210|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=1,toView=2,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.236
+info|2019-12-11 20:48:31.527290|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=1,org_changeCycle=0,cur_changeCycle=0,to_view=2
+info|2019-12-11 20:48:32.529860|[g:1][CONSENSUS]addRawPrepare,height=71,reqIdx=0,hash=e7c527db...
+info|2019-12-11 20:48:32.530118|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=2,toView=3,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.242
+info|2019-12-11 20:48:32.535727|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=2,org_changeCycle=0,cur_changeCycle=0,to_view=3
+info|2019-12-11 20:48:33.537387|[g:1][CONSENSUS]addRawPrepare,height=71,reqIdx=1,hash=50a864a7...
+info|2019-12-11 20:48:33.537650|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=3,toView=4,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.204
+info|2019-12-11 20:48:33.543281|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=3,org_changeCycle=0,cur_changeCycle=0,to_view=4
+info|2019-12-11 20:48:34.544649|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=71,tx=0,nodeIdx=2,hash=ed001c43...
+info|2019-12-11 20:48:34.563193|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=4,toView=5,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.215
+info|2019-12-11 20:48:34.568918|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=4,org_changeCycle=0,cur_changeCycle=0,to_view=5
+info|2019-12-11 20:48:35.564422|[g:1][CONSENSUS]addRawPrepare,height=71,reqIdx=3,hash=38d94c91...
+info|2019-12-11 20:48:35.564740|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=5,toView=6,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.26
+info|2019-12-11 20:48:35.574734|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=5,org_changeCycle=0,cur_changeCycle=0,to_view=6
+info|2019-12-11 20:48:36.187024|[g:1][CONSENSUS][PBFT]checkReq: Recv future request,prepHash=00000000...,INFO=handleSignMsg,num=71,curNum=70,GenIdx=3,Sview=6,view=6,fromIdx=3,fromNode=c9f8a9aa...,fromIp=127.0.0.1:56134,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...
+info|2019-12-11 20:48:36.187035|[g:1][CONSENSUS][PBFT]FutureBlock,INFO=handleSignMsg,num=71,curNum=70,GenIdx=3,Sview=6,view=6,fromIdx=3,fromNode=c9f8a9aa...,fromIp=127.0.0.1:56134,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...
+info|2019-12-11 20:48:36.187808|[g:1][CONSENSUS]addRawPrepare,height=71,reqIdx=0,hash=e032eb15...
+info|2019-12-11 20:48:36.188092|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=71,parentHash=f8a92e530dbc67a6a52c3c66efcfd238397f1d958e1495d0ab1b785013b637b8,parentNum=70,parentStateRoot=fbc6dc6810f8ee19b1ed624cdd697084ee6fb136a6dd234d85cd9aba2ddd5aec
+info|2019-12-11 20:48:36.189555|[g:1][CONSENSUS][PBFT]execBlock,blkNum=71,reqIdx=0,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...,decodeCost=0,checkCost=0,notifyCost=0,noteSealingCost=0,currentCycle=0,verifyAndSetSenderCost=1,execCost=1,execPerTx=1,totalCost=2
+info|2019-12-11 20:48:36.190248|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,Timecost=2.712,INFO=handlePrepareMsg,reqIdx=0,view=6,reqNum=71,curNum=70,consNum=71,fromIp=127.0.0.1:56134,hash=e032eb15...,nodeIdx=2,myNode=c977f1b9...,curChangeCycle=0
+info|2019-12-11 20:48:36.198323|[g:1][CONSENSUS][PBFT]checkAndCommit: backup/updateCommittedPrepare,reqNum=71,hash=e032eb15...,nodeIdx=2,myNode=c977f1b9...
+info|2019-12-11 20:48:36.198970|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=0.894,INFO=handleSignMsg,num=71,curNum=70,GenIdx=0,Sview=6,view=6,fromIdx=3,fromNode=c9f8a9aa...,fromIp=127.0.0.1:56134,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...
+info|2019-12-11 20:48:36.201568|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=71,curNum=70,GenIdx=3,Cview=6,view=6,fromIdx=3,fromNode=c9f8a9aa...,fromIp=127.0.0.1:56134,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...,Timecost=0.292
+info|2019-12-11 20:48:36.249882|[g:1][CONSENSUS][PBFT]checkAndSave: CommitReq enough,prepareHeight=71,commitSize=3,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...
+info|2019-12-11 20:48:36.250376|[g:1][g:1][STORAGE][CachedStorage]CachedStorage commit: 6 hash: e0ff41cb340b04024d6ed81d16933f0ac2be113f3046b3624d08ad4e913fcb65 num: 71
+info|2019-12-11 20:48:36.250452|[g:1][STORAGE]Submited block task: 71, current syncd block: 0
+info|2019-12-11 20:48:36.250457|[g:1][g:1][STORAGE][CachedStorage]Current block number: 71 greater than syncd block number: 0, waiting...
+info|2019-12-11 20:48:36.250533|[STORAGE]Start commit block: 71 to backend storage
+info|2019-12-11 20:48:36.254325|[g:1][g:1][STORAGE][CachedStorage]Current block number: 71 greater than syncd block number: 0, waiting...
+info|2019-12-11 20:48:36.254540|[g:1][g:1][STORAGE][CachedStorage]Current block number: 71 greater than syncd block number: 0, waiting...
+info|2019-12-11 20:48:36.254560|[g:1][g:1][STORAGE][CachedStorage]Current block number: 71 greater than syncd block number: 0, waiting...
+info|2019-12-11 20:48:36.254586|[g:1][g:1][STORAGE][CachedStorage]Current block number: 71 greater than syncd block number: 0, waiting...
+info|2019-12-11 20:48:36.254603|[g:1][g:1][STORAGE][CachedStorage]Current block number: 71 greater than syncd block number: 0, waiting...
+info|2019-12-11 20:48:36.257168|[STORAGE][g:1]
+---------------------------------------------------------------------
+Commit block: 71 to backend storage finished, current cached block: 71
+Flush elapsed time: 0.0067s
+---------------------------------------------------------------------
+
+info|2019-12-11 20:48:36.504750|[g:1]Push block notify: 1-71
+info|2019-12-11 20:48:36.504843|[g:1][CONSENSUS][PBFT]CommitBlock Succ,prepareHeight=71,reqIdx=0,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...,genSigTimeCost=0,commitBlockTimeCost=255,dropTxsTimeCost=0,noteSealingTimeCost=0,totalTimeCost=255
+info|2019-12-11 20:48:36.504860|[g:1][CONSENSUS][PBFT]handleCommitMsg Succ,INFO=handleCommitMsg,reqNum=71,curNum=70,GenIdx=0,Cview=6,view=6,fromIdx=0,fromNode=422659d6...,fromIp=127.0.0.1:30303,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...,Timecost=255.236
+info|2019-12-11 20:48:36.505271|[g:1][CONSENSUS][PBFT]checkReq: Recv future request,prepHash=00000000...,INFO=handleCommitMsg,reqNum=71,curNum=70,GenIdx=3,Cview=6,view=6,fromIdx=0,fromNode=422659d6...,fromIp=127.0.0.1:30303,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...
+info|2019-12-11 20:48:36.505564|[g:1][CONSENSUS][PBFT]checkReq: Recv future request,prepHash=00000000...,INFO=handleCommitMsg,reqNum=71,curNum=70,GenIdx=0,Cview=6,view=6,fromIdx=3,fromNode=c9f8a9aa...,fromIp=127.0.0.1:56134,hash=e0ff41cb...,nodeIdx=2,myNode=c977f1b9...
+info|2019-12-11 20:48:36.505921|[g:1][CONSENSUS][SEALER]increase maxNoTimeoutTx,maxNoTimeoutTx=1
+info|2019-12-11 20:48:36.505932|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=71,sealerIdx=0,hash=e0ff41cb...,next=72,tx=1,nodeIdx=2
+info|2019-12-11 20:48:37.475856|[g:1][CONSENSUS]addRawPrepare,height=72,reqIdx=3,hash=4a74d20d...
+info|2019-12-11 20:48:37.476195|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=1,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.226
+info|2019-12-11 20:48:37.483459|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=0,org_changeCycle=0,cur_changeCycle=0,to_view=1
+info|2019-12-11 20:48:38.486890|[g:1][CONSENSUS]addRawPrepare,height=72,reqIdx=0,hash=7a3a5fa9...
+info|2019-12-11 20:48:38.487118|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=1,toView=2,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.199
+info|2019-12-11 20:48:38.493054|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=1,org_changeCycle=0,cur_changeCycle=0,to_view=2
+info|2019-12-11 20:48:39.001637|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30300
+info|2019-12-11 20:48:39.001718|[P2P][Service] heartBeat,connected count=2
+info|2019-12-11 20:48:39.001865|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30300
+info|2019-12-11 20:48:39.020001|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:56166
+info|2019-12-11 20:48:39.020776|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30302
+info|2019-12-11 20:48:39.036901|[NETWORK][Host]startPeerSession, From=127.0.0.1:30300,nodeID=828ee74c...
+info|2019-12-11 20:48:39.036970|[P2P][Service] Connection established,nodeID=828ee74c...,endpoint=127.0.0.1:30300
+info|2019-12-11 20:48:39.048752|[NETWORK][Host]startPeerSession, From=127.0.0.1:56166,nodeID=828ee74c...
+info|2019-12-11 20:48:39.493595|[g:1][CONSENSUS]addRawPrepare,height=72,reqIdx=1,hash=70110042...
+info|2019-12-11 20:48:39.493901|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=2,toView=3,nodeIdx=2,changeCycle=0,myNode=c977f1b9...,timecost=0.231
+info|2019-12-11 20:48:39.503117|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=2,org_changeCycle=0,cur_changeCycle=0,to_view=3
+info|2019-12-11 20:48:40.504840|[g:1][CONSENSUS][SEALER]++++++++++++++++ Generating seal on,blkNum=72,tx=0,nodeIdx=2,hash=e6bee1e8...
+info|2019-12-11 20:48:40.520359|[g:1][CONSENSUS][PBFT]checkTimeout 
