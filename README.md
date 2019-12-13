@@ -26,7 +26,7 @@ $ bash get_account.sh
 首先进入blockchain_server目录:
 
 ```
-$ git submodule add https://github.com/FISCO-BCOS/nodejs-sdk.git blockchain_server/nodejs-sdk
+$ git clone https://github.com/FISCO-BCOS/nodejs-sdk.git blockchain_server/nodejs-sdk
 ```
 
 然后进入到新出现的blockchain_server/nodejs-sdk目录。
