@@ -1,0 +1,238 @@
+---
+swagger: "2.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "BlockChain"
+tags:
+- name: "Company"
+- name: "Receipt"
+schemes:
+- "https"
+- "http"
+paths:
+  /company:
+    get:
+      tags:
+      - "Company"
+      summary: "Get company details"
+      description: ""
+      operationId: "companyGET"
+      parameters: []
+      responses:
+        "200":
+          description: "OK"
+          schema:
+            $ref: "#/definitions/Company"
+      x-swagger-router-controller: "Company"
+  /company/verify:
+    post:
+      tags:
+      - "Company"
+      summary: "Bank verify a receipt"
+      description: ""
+      operationId: "companyVerifyPOST"
+      parameters:
+      - in: "body"
+        name: "verifyParam"
+        required: true
+        schema:
+          $ref: "#/definitions/VerifyParam"
+      responses:
+        "200":
+          description: "OK"
+      x-swagger-router-controller: "Company"
+  /company/evaluate:
+    post:
+      tags:
+      - "Company"
+      summary: "Bank evaluate a company"
+      description: ""
+      operationId: "companyEvaluatePOST"
+      parameters:
+      - in: "body"
+        name: "evaluateParam"
+        required: true
+        schema:
+          $ref: "#/definitions/EvaluateParam"
+      responses:
+        "200":
+          description: "OK"
+      x-swagger-router-controller: "Company"
+  /receipts:
+    get:
+      tags:
+      - "Receipt"
+      summary: "Get the list of receipt"
+      description: ""
+      operationId: "receiptsGET"
+      parameters: []
+      responses:
+        "200":
+          description: "OK"
+          schema:
+            $ref: "#/definitions/RecieptList"
+      x-swagger-router-controller: "Receipt"
+  /receipt/transfer:
+    post:
+      tags:
+      - "Receipt"
+      summary: "transfer a receipt to another company"
+      description: ""
+      operationId: "receiptTransferPOST"
+      parameters:
+      - in: "body"
+        name: "transferParam"
+        required: true
+        schema:
+          $ref: "#/definitions/TransferParam"
+      responses:
+        "200":
+          description: "OK"
+      x-swagger-router-controller: "Receipt"
+  /receipt/settle:
+    post:
+      tags:
+      - "Receipt"
+      summary: "settle a receipt"
+      description: ""
+      operationId: "receiptSettlePOST"
+      parameters:
+      - in: "body"
+        name: "settleParam"
+        required: true
+        schema:
+          $ref: "#/definitions/SettleParam"
+      responses:
+        "200":
+          description: "OK"
+      x-swagger-router-controller: "Receipt"
+  /receipt/sign:
+    post:
+      tags:
+      - "Receipt"
+      summary: "sign a receipt"
+      description: ""
+      operationId: "receiptSignPOST"
+      parameters:
+      - in: "body"
+        name: "signParam"
+        required: true
+        schema:
+          $ref: "#/definitions/SignParam"
+      responses:
+        "200":
+          description: "OK"
+      x-swagger-router-controller: "Receipt"
+  /receipt/finance:
+    post:
+      tags:
+      - "Receipt"
+      summary: "finance to bank"
+      description: ""
+      operationId: "receiptFinancePOST"
+      parameters:
+      - in: "body"
+        name: "financeParam"
+        required: true
+        schema:
+          $ref: "#/definitions/FinanceParam"
+      responses:
+        "200":
+          description: "OK"
+      x-swagger-router-controller: "Receipt"
+definitions:
+  Company:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      address:
+        type: "string"
+      credit:
+        type: "integer"
+        format: "int64"
+      accepted:
+        type: "boolean"
+      debt:
+        type: "integer"
+        format: "int64"
+    example:
+      address: "address"
+      name: "name"
+      accepted: true
+      credit: 0
+      debt: 6
+  Reciept:
+    type: "object"
+    properties:
+      from:
+        type: "string"
+      to:
+        type: "string"
+      amount:
+        type: "integer"
+        format: "int64"
+      status:
+        type: "boolean"
+      end:
+        type: "string"
+        format: "date"
+  RecieptList:
+    type: "array"
+    items:
+      $ref: "#/definitions/Reciept"
+  TransferParam:
+    type: "object"
+    properties:
+      to:
+        type: "string"
+      name:
+        type: "string"
+      amount:
+        type: "integer"
+        format: "int64"
+      idx:
+        type: "integer"
+        format: "int64"
+  SettleParam:
+    type: "object"
+    properties:
+      idx:
+        type: "integer"
+        format: "int64"
+  SignParam:
+    type: "object"
+    properties:
+      to:
+        type: "string"
+      name:
+        type: "string"
+      amount:
+        type: "integer"
+        format: "int64"
+      end:
+        type: "string"
+        format: "date"
+  FinanceParam:
+    type: "object"
+    properties:
+      amount:
+        type: "integer"
+        format: "int64"
+  VerifyParam:
+    type: "object"
+    properties:
+      to:
+        type: "string"
+      idx:
+        type: "integer"
+        format: "int64"
+  EvaluateParam:
+    type: "object"
+    properties:
+      to:
+        type: "string"
+      credit:
+        type: "integer"
+        format: "int64"
